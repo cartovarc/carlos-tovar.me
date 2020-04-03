@@ -76,6 +76,35 @@
       </div>
       <q-separator class="q-mt-lg" />
     </div>
+
+    <div class="row">
+      <div class="text-weight-bold text-center text-blue-grey-9 col-12 text-h4 q-mt-lg">
+        My awesome projects
+      </div>
+      <q-carousel
+          v-model="slide"
+          swipeable
+          animated
+          :control-type="controlType"
+          control-color="blue"
+          navigation
+          padding
+          arrows
+          height="520px"
+          class="text-blue rounded-borders col-12"
+        >
+          <q-carousel-slide name="style" class="column no-wrap flex-center">
+            <project-card
+              title="awesome-todo"
+              description="Stay organized and get more done with this awesome todo app"
+              img="https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2016/09/Task-Management1.jpg"
+              github="https://github.com/cartovarc/vuejs-playground/tree/master/quasarframework/awesome-todo"
+              demo="https://cartovarc-awesome-todo.web.app/"
+              :stars="3"/>
+          </q-carousel-slide>
+        </q-carousel>
+
+    </div>
   </div>
 </template>
 
@@ -91,10 +120,12 @@ export default {
         { value: 'outline', label: 'outline' },
         { value: 'push', label: 'push' }
       ],
-
       slide: 'style',
       lorem: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo.'
     }
+  },
+  components: {
+    'project-card': require('components/ProjectCard.vue').default,
   }
 }
 </script>
