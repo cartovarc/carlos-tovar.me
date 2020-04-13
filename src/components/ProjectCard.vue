@@ -7,7 +7,7 @@
           fab
           color="blue-grey-9"
           icon="event"
-          class="absolute"
+          class="absolute no-pointer-events"
           style="top: 0; right: 12px; transform: translateY(-50%);"
         />
 
@@ -17,14 +17,20 @@
           </div>
         </div>
 
-        <q-rating
-          readonly
-          v-model="stars"
-          :max="5"
-          size="3em"
-          color="blue"
-          :icon="icons"
-        />
+      <q-linear-progress
+        size="25px"
+        :value="progress1"
+        color="accent">
+        <div
+          class="absolute-full
+          flex
+          flex-center">
+          <q-badge
+            color="white"
+            text-color="accent"
+            :label="progressLabel1" />
+        </div>
+      </q-linear-progress>
 
       </q-card-section>
 
@@ -59,13 +65,12 @@ export default {
   props: ['title', 'description', 'stars', "img", 'github', 'demo'],
   data () {
     return {
-      icons: [
-        'sentiment_very_dissatisfied',
-        'sentiment_dissatisfied',
-        'sentiment_neutral',
-        'sentiment_satisfied',
-        'sentiment_very_satisfied'
-      ]
+      progress1: 0.70
+    }
+  },
+  computed: {
+    progressLabel1 () {
+      return (this.progress1 * 100).toFixed(2) + '%'
     }
   },
   components: {
