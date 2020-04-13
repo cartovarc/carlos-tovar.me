@@ -13,7 +13,7 @@
                       <q-avatar
                         class="q-mb-lg q-mt-sm"
                         style="width: 100%; height: 100%;">
-                          <q-img src="statics/hero.jpeg" :ratio="1" />
+                          <q-img src="https://avatars1.githubusercontent.com/u/26529546?s=460&u=7d9794f9b38aef28063e43bb92a70076eefbc5ae&v=4" :ratio="1" />
                       </q-avatar>
                   </div>
                   <div
