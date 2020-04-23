@@ -77,7 +77,8 @@
         <q-carousel-slide name="awesome-todo" class="column no-wrap flex-center">
           <project-card
             title="awesome-todo"
-            description="Stay organized and get more done with this awesome todo app"
+            description="Stay organized and get more done"
+            icon="event"
             img="https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2016/09/Task-Management1.jpg"
             github="https://github.com/cartovarc/vuejs-playground/tree/master/quasarframework/awesome-todo"
             demo="https://cartovarc-awesome-todo.web.app/"
@@ -85,13 +86,14 @@
           />
         </q-carousel-slide>
 
-        <q-carousel-slide name="viper-method" class="column no-wrap flex-center">
+        <q-carousel-slide name="github-method" class="column no-wrap flex-center">
           <project-card
-            title="viper-method"
+            title="github-method"
             description="Helps you build habits"
-            img="https://i.pinimg.com/originals/77/ed/01/77ed01178e3d3ad85e6ce579bc7b64ce.jpg"
-            github="https://github.com/cartovarc/viper-method"
-            demo="/"
+            icon="build"
+            img="https://i.pinimg.com/originals/dc/1a/1a/dc1a1a4287f57e4a80ea5ecfd912ee96.png"
+            github="https://github.com/cartovarc/github-method"
+            demo="https://github-method.web.app/#/profile"
             :progress="0.1"
           />
         </q-carousel-slide>

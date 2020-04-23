@@ -6,7 +6,7 @@
       <q-btn
         fab
         color="blue-grey-9"
-        icon="event"
+        :icon="icon"
         class="absolute no-pointer-events"
         style="top: 0; right: 12px; transform: translateY(-50%);"
       />
@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  props: ["title", "description", "progress", "img", "github", "demo"],
+  props: ["title", "description", "progress", "icon", "img", "github", "demo"],
   computed: {
     progressLabel1() {
       return (this.progress * 100).toFixed(2) + "%";
