@@ -93,8 +93,8 @@
             icon="build"
             img="https://i.pinimg.com/originals/dc/1a/1a/dc1a1a4287f57e4a80ea5ecfd912ee96.png"
             github="https://github.com/cartovarc/github-method"
-            demo="https://github-method.web.app/#/profile"
-            :progress="0.1"
+            demo="https://github-method.web.app/"
+            :progress="0.2"
           />
         </q-carousel-slide>
       </q-carousel>
